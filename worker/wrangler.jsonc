@@ -1,0 +1,26 @@
+{
+  "name": "skyrush-api",
+  "main": "index.js",
+  "compatibility_date": "2026-11-18",
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "GAME",
+        "class_name": "GlobalGame"
+      }
+    ]
+  },
+  "exports": {
+    "GlobalGame": {
+      "type": "durable-object",
+      "storage": "sqlite"
+    }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "skyrush-db",
+      "database_id": "REPLACE_WITH_THE_EXISTING_D1_DATABASE_ID_FROM_THE_DASHBOARD"
+    }
+  ]
+}
